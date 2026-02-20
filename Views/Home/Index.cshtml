@@ -1,9 +1,18 @@
-﻿@* @{
-    ViewData["Title"] = "Home Page";
+﻿@{
+    ViewData["Title"] = "Главная";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
- *@
+<section class="main">
+    <div class="intro-container">
+        <h1 class="intro">Аренда автомобилей в Минске</h1>
+        <a class="btn-round" asp-controller="Home" asp-action="Catalog">перейти в автопарк</a>
+    </div>
+    <div class="main-info">Широкий ассортимент автомобилей<br/>эконом, комфорт и премиум класса</div>
+    <ul class="company-stats">
+        <li><span class="white-round">без водителя</span><span class="white-round">доступен выкзд за город</span></li>
+        <li><span>4000+</span><span>клиентов</span></li>
+        <li><span>20+</span><span>автомобилей</span></li>
+        <li><span>2+</span><span>лет на рынке</span></li>
+    </ul>
+</section>
+

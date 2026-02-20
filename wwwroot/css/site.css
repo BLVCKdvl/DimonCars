@@ -27,7 +27,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: #292322;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -37,4 +38,68 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+.call-link-header{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link.btn-menu{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 15px;
+}
+
+.main{
+   max-width: 1920px;
+   width: 100%;
+   
+   margin: auto;
+}
+
+.intro-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+
+.btn-menu,
+.navbar-brand {
+    color: #fff;
+    border-radius: 50%;
+    transition: var(--time) var(--cubik);
+    padding: 0 30px;
+}
+
+.btn-menu:hover,
+.navbar-brand:hover{
+    color: #333;
+    background: #fff;
+    transition: var(--time) var(--cubik);
+    border-radius: 7px;
+    padding: 0 30px;
+}
+
+.intro-container .btn-round{
+    background: url("../images/background-main.jpg");
 }
