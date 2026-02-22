@@ -1,6 +1,6 @@
 :root {
     --main-color: #a13248;
-    --color-background: #190824;
+    --color-background: #1c1918;
     --shadow-external: 0px 0px 5px 5px rgba(161, 50, 72, 0.2);
     --radius: 10px;
     --time: 0.2s;
@@ -28,7 +28,8 @@ html {
 
 body {
     margin-bottom: 60px;
-    background: #292322;
+    background: var(--color-background);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -77,6 +78,7 @@ container-fluid {
     flex-direction: row;
     justify-content: space-between;
     min-height: 300px;
+    height: 600px;
 }
 
 .navbar-brand{
@@ -86,7 +88,7 @@ container-fluid {
 .btn-menu,
 .navbar-brand {
     color: #fff;
-    border-radius: 50%;
+    border-radius: 25%;
     transition: var(--time) var(--cubik);
     padding: 0 30px;
 }
@@ -100,6 +102,47 @@ container-fluid {
     padding: 0 30px;
 }
 
-.intro-container .btn-round{
-    background: url("../images/background-main.jpg");
+.intro-container .image-right {
+    background: url("../images/background-main.jpg") center no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.intro-container > *{
+    flex: 1;
+}
+
+h1.intro {
+    color: #fff;
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+.intro-container .btn-round {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
 }
