@@ -1,14 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebApplication1.Models;
+using WebApplication1.Services;
 
 namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly SiteStatsService _statsService;
+
+        public HomeController(SiteStatsService statsService)
         {
-            return View();
+            _statsService = statsService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            ViewBag.Stats = await _statsService.GetStatsAsync();
+
+            return View();   
         }
 
         public IActionResult Catalog()

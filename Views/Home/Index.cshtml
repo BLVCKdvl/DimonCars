@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Главная";
+    var stats = ViewBag.Stats as SiteStatsDto;
 }
 
 <section class="main">
@@ -9,15 +10,17 @@
             <div class="main-info">Широкий ассортимент автомобилей<br />эконом, комфорт и премиум класса</div>
             <ul class="company-stats">
                 <li><span class="white-round">без водителя</span><span class="white-round">доступен выезд за город</span></li>
-                <li><span class="stat-number">4000+</span><span>клиентов</span></li>
-                <li><span class="stat-number">20+</span><span>автомобилей</span></li>
-                <li class="no-background"><span class="stat-number">2+</span><span>лет на рынке</span></li>
+                <li><span class="stat-number">@stats.TotalClients+</span><span>клиентов</span></li>
+                <li><span class="stat-number">@stats.TotalCars+</span><span>автомобилей</span></li>
+                <li class="no-background"><span class="stat-number">@stats.YearsOnMarket+</span><span>лет на рынке</span></li>
             </ul>
         </div>
         <div class="image-right">
             <a class="btn-round" asp-controller="Home" asp-action="Catalog">перейти<br/>в автопарк</a>
         </div>        
     </div>
+
+    
    
 </section>
 
