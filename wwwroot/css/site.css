@@ -1,8 +1,8 @@
 :root {
     --main-color: #a13248;
-    --color-background: #1c1918;
+    --color-background: #0a0914;
     --shadow-external: 0px 0px 5px 5px rgba(161, 50, 72, 0.2);
-    --radius: 10px;
+    --radius: 50px;
     --time: 0.2s;
     --cubik: cubic-bezier(.54,.82,.49,.21);
 }
@@ -78,7 +78,8 @@ container-fluid {
     flex-direction: row;
     justify-content: space-between;
     min-height: 300px;
-    height: 600px;
+    height: auto;
+    padding-left: 15px;
 }
 
 .navbar-brand{
@@ -90,7 +91,7 @@ container-fluid {
     color: #fff;
     border-radius: 25%;
     transition: var(--time) var(--cubik);
-    padding: 0 30px;
+    
 }
 
 .btn-menu:hover,
@@ -99,7 +100,6 @@ container-fluid {
     background: #fff;
     transition: var(--time) var(--cubik);
     border-radius: 7px;
-    padding: 0 30px;
 }
 
 .intro-container .image-right {
@@ -112,6 +112,7 @@ container-fluid {
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: var(--radius) 0 0 0;
 }
 
 .image-right::before {
@@ -138,11 +139,88 @@ h1.intro {
     height: 250px;
     width: 250px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
+    z-index: 2;
+    transition: var(--time) var(--cubik);
+}
+
+.intro-container .btn-round:hover{
+    scale: 1.1;
+    transition: var(--time) var(--cubik);
+}
+
+.left-block{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.main-info{
+    color: #fff;
+    font-size: 20px;
+}
+
+.company-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 130%;
+    background: var(--color-background);
+    padding: 40px;
+    padding-left: 0;
+    z-index: 3;
+    margin-bottom: 0;
+    border-radius: 0 var(--radius) 0 0;
+}
+
+.company-stats li{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+}
+
+.stat-number{
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.no-padding{
+    padding: 0 !important;
+}
+
+.no-background{
+    background: transparent !important;
+}
+
+.white-round{
+    background: #fff;
+    color: var(--color-background);
+    border-radius: 15px;
+    text-align: center;
+    padding: 0 20px;
+    
+}
+
+.call-link-header > span{
+    color: #fff;
+    text-align: right;
+}
+
+.contacts-number{
+    font-size: 16px;
+}
+
+.contacts-intro {
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 100;
 }
