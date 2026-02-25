@@ -1,6 +1,6 @@
 {
-  "totalClients": 4370,
-  "totalCars": 28,
-  "companystartDate": "2022-11-01",
-  "clientBonus":  130
+  "TotalClients": 4370,
+  "TotalCars": 28,
+  "CompanyStartDate": "2022-11-01",
+  "ClientBonus":  130
 }

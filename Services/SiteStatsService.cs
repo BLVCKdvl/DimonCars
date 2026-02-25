@@ -23,7 +23,8 @@ namespace WebApplication1.Services
             {
                 entry.SlidingExpiration = TimeSpan.FromHours(4);
 
-                var path = Path.Combine(_env.ContentRootPath, "wwwroot", "data", "site-stats.json");
+                var path = Path.Combine(_env.WebRootPath, "data", "site-stats.json");
+
                 if (!File.Exists(path))
                 {
                     _logger.LogWarning("site-stats.json не найден.");
@@ -35,7 +36,6 @@ namespace WebApplication1.Services
 
                 var startDate = DateTime.Parse(data.CompanyStartDate);
 
-                
                 var years = DateTime.Today.Year - startDate.Year;
                 if (DateTime.Today < startDate.AddYears(years)) years--;
 
