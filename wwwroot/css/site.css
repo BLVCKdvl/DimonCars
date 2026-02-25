@@ -11,10 +11,14 @@ html {
   font-size: 14px;
 }
 
+.navbar.mb-3{
+    margin-top: 1rem;
+}
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -41,10 +45,22 @@ body {
   text-align: start;
 }
 
-.call-link-header{
+.call-link-header {
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    transition: var(--time) var(--cubik);
+    padding: 5px;
+    font-size: 14px;
+    opacity: 0.7
+}
+
+.call-link-header:hover {
+    box-shadow: 0px 0px 26px 8px rgba(255, 255, 255, 0.2);
+    scale: 1.05;
+    transition: var(--time) var(--cubik);
+    opacity: 1;
 }
 
 container-fluid {
@@ -215,12 +231,25 @@ h1.intro {
     text-align: right;
 }
 
-.contacts-number{
-    font-size: 16px;
-}
-
 .contacts-intro {
     font-size: 12px;
     opacity: 0.8;
     font-weight: 100;
 }
+
+/*a {
+    font-family: sans-serif;
+    text-shadow: 0 0 0 rgb(255, 0, 0), 0 0 0 rgb(0, 255, 0), 0 0 0 rgb(0, 0, 255) !important;
+}
+
+    a:hover {
+        text-shadow: 0.3px -0.1px 0.1px rgb(255, 0, 0), 0.2px 0.1px 0 rgb(0, 255, 0), -0.1px 0.2px 0 rgb(0, 0, 255) !important;
+        transition: 0.2s cubic-bezier(0.5, 200, 0.5, -200) !important;
+        color: black !important;
+    }*/
+
+/*.call-link-header:hover {*/
+    /*transform: translateY();*/
+    /*transform: translate(-1800px, +700px);
+    transition: 0.1s var(--cubik);
+}*/
