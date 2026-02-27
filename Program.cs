@@ -1,15 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Services;
-using WebApplication1.Data;
+using WebApplication1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddMemoryCache();
-builder.Services.AddScoped<SiteStatsService>();
+//builder.Services.AddScoped<SiteStatsService>();
 
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres")));
+builder.Services.AddDbContext<SiteStatsContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres")));
 
 var app = builder.Build();
 
