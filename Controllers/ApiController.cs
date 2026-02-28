@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using System.Text;
+﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Data;
-using WebApplication1.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace WebApplication1.Controllers
@@ -39,15 +36,6 @@ namespace WebApplication1.Controllers
                 stats.CompanyStartDate,
                 stats.ClientBonus
             });
-            //bool canConnect = _siteStatsContext.Database.CanConnect();
-
-            //StringBuilder stringBuilder = new StringBuilder();
-
-            //stringBuilder.Append(canConnect + "\n");
-
-            //stringBuilder.Append(_siteStatsContext.SiteStatsCollection);
-
-            //return Ok(stringBuilder.ToString());
         }
     }
 }
