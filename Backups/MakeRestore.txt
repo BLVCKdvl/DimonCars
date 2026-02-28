@@ -1,0 +1,12 @@
+ & "C:\Program Files\PostgreSQL\18\bin\dropdb.exe" -U postgres dimoncars --if-exists 
+ 
+ & "C:\Program Files\PostgreSQL\18\bin\pg_restore.exe" `
+>>   --clean `
+>>   --no-acl `
+>>   --no-owner `
+>>   --create `
+>>   --host=localhost `
+>>   --port=5432 `
+>>   --username=postgres `
+>>   --dbname=postgres `
+>>   "Backups\backup.dump"
