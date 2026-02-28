@@ -1,15 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication1.Models
-{
-    public class SiteStatsContext : DbContext
-    {
-        public SiteStatsContext(DbContextOptions<SiteStatsContext> options)
-            : base(options) { }
-
-        public DbSet<SiteStats> SiteStatsCollection { get; set; }
-    }
-
+{        
+    [Table("site_stats")]
     public class SiteStats
     {
         public int id { get; set; }
