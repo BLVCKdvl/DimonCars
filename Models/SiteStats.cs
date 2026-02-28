@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication1.Models
 {        
@@ -7,15 +6,16 @@ namespace WebApplication1.Models
     public class SiteStats
     {
         [Column("id")]
-        public int id { get; set; }
+        public int? id { get; set; }
         [Column("total_clients")]
         public int TotalClients { get; set; }
         [Column("total_cars")]
         public int TotalCars { get; set; }
         [Column("company_start_date")]
-        public int CompanyStartDate { get; set; }
+        public DateTime CompanyStartDate { get; set; }
         [Column("client_bonus")]
         public int ClientBonus { get; set; }
-
+        [NotMapped]
+        public int YearsOnMarket { get; set; }
     }
 }
