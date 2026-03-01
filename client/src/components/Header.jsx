@@ -1,14 +1,9 @@
 export default function Header() {
   return (
     <header>
-      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-custom mb-3">
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-custom">
         <div class="container-fluid">
-          <a
-            class="navbar-brand"
-            asp-area=""
-            asp-controller="Home"
-            asp-action="Index"
-          >
+          <a href="/" class="navbar-brand">
             DIMONCARS
           </a>
           <button
@@ -25,42 +20,22 @@ export default function Header() {
           <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
               <li class="nav-item">
-                <a
-                  class="nav-link btn-menu"
-                  asp-area=""
-                  asp-controller="Home"
-                  asp-action="Catalog"
-                >
+                <a href="/catalog" class="nav-link btn-menu">
                   каталог
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link btn-menu"
-                  asp-area=""
-                  asp-controller="Home"
-                  asp-action="Conditions"
-                >
+                <a href="/conditions" class="nav-link btn-menu">
                   условия
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link btn-menu"
-                  asp-area=""
-                  asp-controller="Home"
-                  asp-action="Rewievs"
-                >
+                <a href="/reviews" class="nav-link btn-menu">
                   отзывы
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link btn-menu"
-                  asp-area=""
-                  asp-controller="Home"
-                  asp-action="Contacts"
-                >
+                <a href="/contacts" class="nav-link btn-menu">
                   контакты
                 </a>
               </li>
