@@ -1,4 +1,4 @@
-﻿@{
+﻿@* @{
     ViewData["Title"] = "Главная";
 }
 
@@ -9,3 +9,12 @@
    
 </section>
 
+ *@
+
+@{
+    ViewData["Title"] = "Backend Status";
+}
+
+<h2>Статус системы</h2>
+<p>Время на сервере: @DateTime.Now</p>
+<p>Окружение: @Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")</p>
