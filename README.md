@@ -15,5 +15,5 @@ stack install:
 
 TECHOLOGY STACK:
 * ASP.NET MVC
-* EF CORE + NPQSQL + Postgre
+* EF CORE + NPGSQL + Postgre
 * REACT + VITE
