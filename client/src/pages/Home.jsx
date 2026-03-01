@@ -1,4 +1,26 @@
-export default function Home() {
+import { useState, useEffect } from "react";
+import { api } from "../services/api";
+
+export default function SiteStats() {
+  const [stats, setStats] = useState({
+    totalClients: 0,
+    totalCars: 0,
+    yearsOnMarket: 0,
+  });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    api
+      .getStats()
+      .then((data) => {
+        setStats(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  if (loading) return <div>Загрузка...</div>;
+
   return (
     <section className="main">
       <div className="intro-container">
@@ -20,15 +42,15 @@ export default function Home() {
               <span className="white-round">доступен выезд за город</span>
             </li>
             <li>
-              <span className="stat-number">1200+</span>
+              <span className="stat-number">{stats.totalClients}+</span>
               <span>клиентов</span>
             </li>
             <li>
-              <span className="stat-number">87+</span>
+              <span className="stat-number">{stats.totalCars}+</span>
               <span>автомобилей</span>
             </li>
             <li className="no-background">
-              <span className="stat-number">6+</span>
+              <span className="stat-number">{stats.yearsOnMarket}+</span>
               <span>лет на рынке</span>
             </li>
           </ul>
