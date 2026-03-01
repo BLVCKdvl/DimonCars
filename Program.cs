@@ -14,6 +14,14 @@ builder.Services.AddDbContext<SiteStatsContext>(options =>
         builder.Configuration.GetConnectionString("Postgres")
     ));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Dev", p =>
+        p.WithOrigins("http://localhost:5173")
+         .AllowAnyHeader()
+         .AllowAnyMethod());
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,5 +44,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.UseCors("Dev");
 
 app.Run();
