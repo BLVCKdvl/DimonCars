@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="client\src\assets\css\site.css" />
+    <Content Include="client\src\assets\images\background-main.jpg" />
+    <Content Include="client\src\assets\images\cars\skoda\octavia-ii.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="Backups\" />
+    <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
