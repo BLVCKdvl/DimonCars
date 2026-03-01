@@ -7,10 +7,13 @@ to start front:
 > cd client
 > npm run dev
 
-stack:
+stack install:
 > npm create vite@latest . -- --template react
 > dotnet add package Microsoft.EntityFrameworkCore --version 10.0.3
 > dotnet add package Microsoft.EntityFrameworkCore.Tools --version 10.0.3
 > dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 10.0.3
 
-
+TECHOLOGY STACK:
+* ASP.NET MVC
+* EF CORE + NPGSQL + Postgre
+* REACT + VITE
