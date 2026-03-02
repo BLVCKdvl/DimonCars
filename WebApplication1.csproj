@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Backups\" />
+    <Folder Include="Backups\SQL\" />
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
