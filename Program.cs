@@ -14,6 +14,11 @@ builder.Services.AddDbContext<SiteStatsContext>(options =>
         builder.Configuration.GetConnectionString("Postgres")
     ));
 
+builder.Services.AddDbContext<CarInfoContext>(options =>
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("Postgres")
+    ));
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Dev", p =>
