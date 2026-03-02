@@ -1,0 +1,13 @@
+create table car_info(
+	id serial primary key,
+	make_model varchar(100),
+	manufacture_year smallint check (manufacture_year >= 2000 AND manufacture_year <= 2100),
+	photo_path varchar(500),
+	engine_volume numeric(3,1) check (engine_volume > 0),
+	daily_cost integer check (daily_cost >= 0),
+	car_class char(1) check (car_class in ('A', 'B', 'C', 'D', 'S', 'F', 'J', 'M'))
+);
+
+#first note
+INSERT INTO car_info (make_model, manufacture_year, photo_path, engine_volume, daily_cost, car_class) VALUES
+('Skoda Octavia II', 2005, '/client/src/assets/images/cars/skoda/octavia-ii.jpg', 1.6, 100, 'C');
