@@ -5,8 +5,8 @@ import Conditions from "./pages/Conditions";
 import Reviews from "./pages/Reviews";
 import Contacts from "./pages/Contacts";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Main/Header";
+import Footer from "./components/Main/Footer";
 
 import "./assets/css/site.css";
 
