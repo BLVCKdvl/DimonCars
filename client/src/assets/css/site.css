@@ -323,19 +323,42 @@ h1.intro {
   padding-right: 15px;
 }
 
-/*a {
-    font-family: sans-serif;
-    text-shadow: 0 0 0 rgb(255, 0, 0), 0 0 0 rgb(0, 255, 0), 0 0 0 rgb(0, 0, 255) !important;
+.model-list {
+  padding: 0 15px;
+  margin: auto;
 }
 
-    a:hover {
-        text-shadow: 0.3px -0.1px 0.1px rgb(255, 0, 0), 0.2px 0.1px 0 rgb(0, 255, 0), -0.1px 0.2px 0 rgb(0, 0, 255) !important;
-        transition: 0.2s cubic-bezier(0.5, 200, 0.5, -200) !important;
-        color: black !important;
-    }*/
+.model-header {
+  color: #fff;
+  text-align: center;
+}
 
-/*.call-link-header:hover {*/
-/*transform: translateY();*/
-/*transform: translate(-1800px, +700px);
-    transition: 0.1s var(--cubik);
-}*/
+.model-list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.model-list-container .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.model-list-container .row div {
+  flex-basis: 45%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list-container .row div::after {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  content: "";
+  opacity: 0.6;
+  display: block;
+}
