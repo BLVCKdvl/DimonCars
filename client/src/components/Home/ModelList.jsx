@@ -31,41 +31,61 @@ export default function ModelList() {
       <h1 className="model-header">Каталог автомобилей</h1>
       <div className="model-list-container">
         <div className="row">
-          <div
-            className="column left"
+          <a
+            href="/"
+            className="column"
             style={{
               backgroundImage: `url(${models.photoPath})`,
             }}
-          ></div>
-          <div
-            className="column right"
+          >
+            <div class="info-container">
+              <h3>{models.makeModel}</h3>
+              <p>{models.manufactureYear}</p>
+              <p>{models.dailyCost}р в день</p>
+            </div>
+          </a>
+          <a
+            href="/"
+            className="column"
             style={{
               backgroundImage: `url(${models.photoPath})`,
             }}
-          ></div>
+          >
+            <div class="info-container">
+              <h3>{models.makeModel}</h3>
+              <p>{models.manufactureYear}</p>
+              <p>{models.dailyCost}р в день</p>
+            </div>
+          </a>
         </div>
         <div className="row">
-          <div
-            className="column left"
+          <a
+            href="/"
+            className="column"
             style={{
               backgroundImage: `url(${models.photoPath})`,
             }}
-          ></div>
-          <div
-            className="column right"
+          >
+            <div class="info-container">
+              <h3>{models.makeModel}</h3>
+              <p>{models.manufactureYear}</p>
+              <p>{models.dailyCost}р в день</p>
+            </div>
+          </a>
+          <a
+            href="/"
+            className="column"
             style={{
               backgroundImage: `url(${models.photoPath})`,
             }}
-          ></div>
+          >
+            <div class="info-container">
+              <h3>{models.makeModel}</h3>
+              <p>{models.manufactureYear}</p>
+              <p>{models.dailyCost}р в день</p>
+            </div>
+          </a>
         </div>
-        {/* <h1>Каталог автомобилей</h1>
-        <p>{models.makeModel}</p>
-        <p>{models.manufactureYear}</p>
-        <p>{models.photoPath}</p>
-        <p>{models.engineVolume}</p>
-        <p>{models.dailyCost}</p>
-        <p>{models.carClass}</p>
-        <img src={models.photoPath} alt="авто" /> */}
       </div>
     </section>
   );

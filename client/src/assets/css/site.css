@@ -161,6 +161,7 @@ container-fluid {
   min-height: 300px;
   height: auto;
   padding-left: 15px;
+  margin-bottom: 100px;
 }
 
 .navbar-brand {
@@ -347,18 +348,45 @@ h1.intro {
   margin-bottom: 20px;
 }
 
-.model-list-container .row div {
+.model-list-container .row a {
   flex-basis: 45%;
   height: 300px;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  border-radius: 25px;
+  padding: 20px;
 }
 
-.model-list-container .row div::after {
-  width: 100%;
-  height: 100%;
-  background-color: #000;
+.model-list-container .row a::after {
   content: "";
-  opacity: 0.6;
-  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: #000;
+  opacity: 0.7;
+  transition: var(--time) var(--cubik);
+  border-radius: 25px;
+}
+
+.model-list-container .row a:hover::after {
+  opacity: 0.4;
+}
+
+.model-list-container a > .info-container {
+  position: relative;
+  z-index: 2;
+  max-width: 320px;
+  left: 5%;
+}
+
+.model-list-container a > .info-container h3 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.model-list-container a > .info-container p {
+  color: #fff;
+  font-size: 20px;
 }
