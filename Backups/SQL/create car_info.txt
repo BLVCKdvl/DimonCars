@@ -10,4 +10,8 @@ create table car_info(
 
 #first note
 INSERT INTO car_info (make_model, manufacture_year, photo_path, engine_volume, daily_cost, car_class) VALUES
-('Skoda Octavia II', 2005, '/client/src/assets/images/cars/skoda/octavia-ii.jpg', 1.6, 100, 'C');
+('Skoda Octavia II', 2005, '/src/assets/images/cars/skoda/octavia-ii.jpg', 1.6, 100, 'C');
+
+#update car
+INSERT INTO car_info (make_model, manufacture_year, photo_path, engine_volume, daily_cost, car_class) VALUES
+('BMW E36', 1996, '/src/assets/images/cars/bmw/e-36.jpg', 1.8, 150, 'C');
