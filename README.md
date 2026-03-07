@@ -1,4 +1,4 @@
-<img width="1917" height="578" alt="image" src="https://github.com/user-attachments/assets/5175bfa2-1aea-463d-b970-45dd5daf3d01" />
+<img width="1857" height="926" alt="image" src="https://github.com/user-attachments/assets/fb965060-2065-4c7f-90b9-67d1a98d9a9e" />
 
 to start back:
 > dotnet watch
