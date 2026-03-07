@@ -15,3 +15,9 @@ INSERT INTO car_info (make_model, manufacture_year, photo_path, engine_volume, d
 #update car
 INSERT INTO car_info (make_model, manufacture_year, photo_path, engine_volume, daily_cost, car_class) VALUES
 ('BMW E36', 1996, '/src/assets/images/cars/bmw/e-36.jpg', 1.8, 150, 'C');
+
+INSERT INTO car_info (make_model, manufacture_year, photo_path, engine_volume, daily_cost, car_class) VALUES
+('Honda Accord VII', 2006, '/src/assets/images/cars/honda/accord-vii.jpg', 2.4, 210, 'D');
+
+INSERT INTO car_info (make_model, manufacture_year, photo_path, engine_volume, daily_cost, car_class) VALUES
+('Mitsubishi Lancer Evo VII', 2010, '/src/assets/images/cars/mitsubishi/lancer-evo-vii.jpg', 2.0, 200, 'C');

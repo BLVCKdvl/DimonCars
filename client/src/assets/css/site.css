@@ -376,7 +376,7 @@ h1.intro {
 .model-list-container a > .info-container {
   position: relative;
   z-index: 2;
-  max-width: 320px;
+  max-width: 400px;
   left: 5%;
 }
 
