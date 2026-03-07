@@ -2,15 +2,6 @@ import { useState, useEffect } from "react";
 import { api } from "../../services/carInfo";
 
 export default function ModelList() {
-  // const [models, setModels] = useState({
-  //   makeModel: "",
-  //   manufactureYear: 0,
-  //   photoPath: "",
-  //   engineVolume: 0.0,
-  //   dailyCost: 0,
-  //   carClass: "",
-  // });
-
   const [models, setModels] = useState([]);
 
   const [loading, setLoading] = useState(true);
