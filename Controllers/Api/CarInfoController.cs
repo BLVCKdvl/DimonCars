@@ -17,17 +17,27 @@ public class CarStatsController : ControllerBase
     [HttpGet("carInfo")]
     public async Task<IActionResult> GetStats()
     {
-        var db = await _carInfoContext.CarInfoCollection.FirstOrDefaultAsync();
+        var databaseResponse = await _carInfoContext.CarInfoCollection
+            .AsNoTracking()
+            .OrderBy(x => x.id)
+            .ToListAsync();
 
-        var vm  = CarInfoService.GetCarInfo(db);
+        //var vm  = CarInfoService.GetCarInfo(db);
 
-        if (vm == null)
-        {
-            throw new NullReferenceException("DB returned null");
-        }
-        else
-        {
-            return Ok(vm);
-        }
+        var viewModel = databaseResponse
+            .Select(CarInfoService.GetCarInfo)
+            .Where (x => x != null)
+            .ToList();
+
+        return Ok(viewModel);
+
+        // if (vm == null)
+        // {
+        //     throw new NullReferenceException("DB returned null");
+        // }
+        // else
+        // {
+        //     return Ok(vm);
+        // }
     }
 }
