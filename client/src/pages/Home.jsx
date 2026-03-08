@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Introduction />
-      <ModelList />
+      <ModelList limit={4} />
     </>
   );
 }

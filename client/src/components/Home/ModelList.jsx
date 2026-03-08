@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { api } from "../../services/carInfo";
 
-export default function ModelList() {
+export default function ModelList({ limit }) {
   const [models, setModels] = useState([]);
 
   const [loading, setLoading] = useState(true);
@@ -10,7 +10,8 @@ export default function ModelList() {
     api
       .getModels()
       .then((data) => {
-        setModels(data);
+        const displayedModels = limit ? data.slice(0, limit) : data;
+        setModels(displayedModels);
         setLoading(false);
       })
       .catch(() => setLoading(false));

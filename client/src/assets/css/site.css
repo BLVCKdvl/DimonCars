@@ -327,6 +327,7 @@ h1.intro {
 .model-list {
   padding: 0 15px;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .model-header {
