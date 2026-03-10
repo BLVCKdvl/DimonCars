@@ -333,6 +333,7 @@ h1.intro {
 .model-header {
   color: #fff;
   text-align: center;
+  font-size: 48px;
 }
 
 .model-list-container {
@@ -390,4 +391,46 @@ h1.intro {
 .model-list-container a > .info-container p {
   color: #fff;
   font-size: 20px;
+}
+
+.advantages {
+  margin-bottom: 100px;
+}
+
+.advantages-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.advantages-block .images-left,
+.advantages-block .information-right {
+  flex-basis: 50%;
+}
+
+.advantages-block .information-right {
+  text-align: center;
+  color: #fff;
+}
+
+.advantages-block .information-right h3 {
+  font-size: 48px;
+  text-align: left;
+  padding: 0 30px;
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.advantages-block .information-right p {
+  font-size: 24px;
+  padding: 0 30px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.advantages-block .bg-image {
+  background: url("../images/Home/background-main-adv.jpg") center no-repeat;
+  height: 500px;
+  background-size: cover;
+  border-radius: 0 100px 100px 0;
 }
