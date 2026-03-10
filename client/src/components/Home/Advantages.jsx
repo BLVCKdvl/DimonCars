@@ -1,11 +1,11 @@
 export default function Advantages() {
   return (
-    <section class="advantages">
-      <div class="advantages-block">
-        <div class="images-left">
-          <div class="bg-image"></div>
+    <section className="advantages">
+      <div className="advantages-block">
+        <div className="images-left">
+          <div className="bg-image"></div>
         </div>
-        <div class="information-right">
+        <div className="information-right">
           <h3>
             Мы поддерживаем идеальное состояние машин и дезинфицируем их перед
             каждым выездом
@@ -16,7 +16,7 @@ export default function Advantages() {
           </p>
         </div>
       </div>
-      <div class="shifter-image"></div>
+      <div className="shifter-image"></div>
     </section>
   );
 }
