@@ -1,6 +1,6 @@
 export default function Advantages() {
   return (
-    <section className="advantages">
+    <section className="advantages flex-1-0-auto">
       <div className="advantages-block">
         <div className="images-left">
           <div className="bg-image"></div>

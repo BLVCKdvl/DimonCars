@@ -27,7 +27,7 @@ export default function Conditions() {
   ];
 
   return (
-    <section className="conditions">
+    <section className="conditions flex-1-0-auto">
       <h3 className="page-header">Условия аренды</h3>
 
       <div className="cards-container">

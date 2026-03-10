@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header>
+    <header className="flex-0-0-auto">
       <nav className="navbar navbar-expand-sm navbar-toggleable-sm navbar-custom">
         <div className="container-fluid">
           <a href="/" className="navbar-brand">

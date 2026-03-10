@@ -20,7 +20,7 @@ export default function ModelList({ limit }) {
   if (loading) return <div>Загрузка...</div>;
 
   return (
-    <section className="model-list">
+    <section className="model-list flex-1-0-auto">
       <h1 className="model-header">Каталог автомобилей</h1>
       <div className="model-list-container">
         {models

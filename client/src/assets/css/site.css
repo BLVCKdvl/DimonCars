@@ -12,6 +12,22 @@ footer,
 body,
 #root {
   max-width: 1920px;
+  margin: auto;
+}
+
+#root {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-1-0-auto {
+  flex: 1 0 auto;
+}
+
+.flex-0-0-auto {
+  flex: 0 0 auto;
 }
 
 .footer {
@@ -458,7 +474,7 @@ h1.intro {
 .conditions {
   background: url("../images/conditions/background-e36.jpg") center no-repeat;
   max-width: 1920px;
-  height: 750px;
+  /* height: 750px; */
   background-size: cover;
   padding: 15px 0;
 }
@@ -513,4 +529,12 @@ h1.intro {
   text-align: center;
   font-weight: 200;
   font-size: 18px;
+}
+
+.reviews {
+  background: url("../images/reviews/background-accord-7.jpg") center no-repeat;
+  max-width: 1920px;
+  /* height: 750px; */
+  background-size: cover;
+  padding: 15px 0;
 }

@@ -23,7 +23,7 @@ export default function SiteStats() {
   if (loading) return <div>Загрузка...</div>;
 
   return (
-    <section className="main">
+    <section className="main flex-1-0-auto">
       <div className="intro-container">
         <div className="left-block">
           <h1 className="intro">
