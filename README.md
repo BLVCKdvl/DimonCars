@@ -1,4 +1,9 @@
-<img width="1857" height="926" alt="image" src="https://github.com/user-attachments/assets/fb965060-2065-4c7f-90b9-67d1a98d9a9e" />
+<img width="1903" height="907" alt="image" src="https://github.com/user-attachments/assets/a2dea180-b0b2-473a-b569-87b48030ba19" />
+<img width="1903" height="907" alt="image" src="https://github.com/user-attachments/assets/481775a3-cfd9-4479-9c72-d047a224b62c" />
+<img width="1905" height="420" alt="image" src="https://github.com/user-attachments/assets/be33c1d7-0867-4bd9-baa8-998dde125789" />
+<hr>
+<img width="1916" height="906" alt="image" src="https://github.com/user-attachments/assets/ee80d3f2-c780-478a-8075-4af14ffaf627" />
+<hr>
 
 to start back:
 > dotnet watch
