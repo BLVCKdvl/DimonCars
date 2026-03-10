@@ -478,6 +478,26 @@ h1.intro {
   border-radius: 20px;
   padding: 20px;
   flex-basis: 30%;
+  position: relative;
+}
+
+.conditions .cards-container .condition-card::after {
+  z-index: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  transition: var(--time) var(--cubik);
+}
+
+.conditions .cards-container .condition-card:hover::after {
+  opacity: 0;
+  transition: var(--time) var(--cubik);
 }
 
 .condition-card > h4 {
